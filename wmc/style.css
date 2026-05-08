@@ -1,6 +1,23 @@
+html {
+    overflow: scroll;
+    scroll-behaviour: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    height: 100vh;
     color: #7979a4;
 }
+#home, #aboutus, #experiences, #store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20vh;
+    
+}
+
+ #phrases {
+    font-style: italic;
+    color: #67ebff;
+ }

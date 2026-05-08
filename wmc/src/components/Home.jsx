@@ -1,12 +1,14 @@
 import Navbar from './Navbar'
+import './index.css'
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <div id="home">
-        <h1>Welcome to Home</h1>
-        <p>This is your home page. Add your content here.</p>
+        <h1>Welcome to onBoards</h1>
+        <p>Indulge into all kind an extrodinary sport experience</p>
+        <p>Let us guide you through your board-journey</p>
       </div>
     </>
   )
