@@ -6,8 +6,11 @@ export default function Experiences() {
     <>
       <Navbar />
       <div id="experiences">
-        <h1>Experiences</h1>
-        <p>This is your experiences page. Add your experiences here.</p>
+        <div className="page-headers">
+          <h1>Experiences</h1>
+          <p class="text-content">Learn the sport you've wanted to try for a very long time.</p>
+        </div>
+        
       </div>
     </>
   )
