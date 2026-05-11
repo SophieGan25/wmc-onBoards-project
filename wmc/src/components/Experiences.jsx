@@ -8,7 +8,7 @@ export default function Experiences() {
       <div id="experiences">
         <div className="page-headers">
           <h1>Experiences</h1>
-          <p class="text-content">Learn the sport you've wanted to try for a very long time.</p>
+          <p class="text-content">Learn the sport you've always wanted to try.</p>
         </div>
         
       </div>
