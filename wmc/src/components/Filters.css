@@ -13,7 +13,7 @@
 
 .dropdown-select {
     background-color: rgba(103, 235, 255, 0.1);
-    color: #67ebff;
+    color: #305f66;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: 1px solid rgba(103, 235, 255, 0.4);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2367ebff' d='M6 8L1 3h10z'/%3E%3C/svg%3E");

@@ -18,6 +18,8 @@ export default function Store() {
   function showAll() {
     setSelectedBoard("");
     setSelectedEquipment("");
+    const filters = document.querySelectorAll('.dropdown-select');
+    filters.forEach(filter => filter.value = "");
   }
 
   return (
@@ -38,7 +40,7 @@ export default function Store() {
           <Filters
             name="Equipment"
             id="equipment-filter"
-            options={["Outerwear", "Layers", "Accessories"]}
+            options={["Outerwear", "Layers", "Accessories", "Footwear", "Boards", "Gear"]}
             onFilter={setSelectedEquipment}
           />
           <button className="showAll-button" onClick={showAll}>Show All</button>
