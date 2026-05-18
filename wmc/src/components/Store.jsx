@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Navbar from './Navbar'
 import './index.css'
 import products from './Products'
@@ -5,6 +6,20 @@ import ProductCard from './Productcard'
 import Filters from './Filters'
 
 export default function Store() {
+  const [selectedBoard, setSelectedBoard] = useState("");
+  const [selectedEquipment, setSelectedEquipment] = useState("");
+
+  const filtered = products.filter(product => {
+    const matchesBoard = selectedBoard === "" || product.category === selectedBoard;
+    const matchesEquipment = selectedEquipment === "" || product.category === selectedEquipment;
+    return matchesBoard || matchesEquipment;
+  });
+
+  function showAll() {
+    setSelectedBoard("");
+    setSelectedEquipment("");
+  }
+
   return (
     <>
       <Navbar />
@@ -14,37 +29,32 @@ export default function Store() {
           <p>Explore our boards, accessories and equipment to get the best experiences.</p>
         </div>
         <div className="filters">
-          <div className="boards-filter">
-            <label htmlFor="category-type" className="catType">Boards</label>
-            <select className="dropdown-select" id="category-type">
-              <option value="">-- choose --</option>
-              <option value="Snowboards">Snowboards</option>
-              <option value="Surfboards">Surfboards</option>
-              <option value="Wakeboards">Wakeboards</option>
-              <option value="Skateboards">Skateboards</option>
-            </select>
-          </div>
-          <div className="equipment-filter">
-            <label htmlFor="category-type" className="catType">Equipment</label>
-            <select className="dropdown-select" id="category-type">
-              <option value="">-- choose --</option>
-              <option value="Outerwear">Outerwear</option>
-              <option value="Layers">Layers</option>
-              <option value="Accessories">Accessories</option>
-            </select>
-          </div>
+          <Filters
+            name="Boards"
+            id="boards-filter"
+            options={["Snowboards", "Surfboards", "Wakeboards", "Skateboards"]}
+            onFilter={setSelectedBoard}
+          />
+          <Filters
+            name="Equipment"
+            id="equipment-filter"
+            options={["Outerwear", "Layers", "Accessories"]}
+            onFilter={setSelectedEquipment}
+          />
+          <button className="showAll-button" onClick={showAll}>Show All</button>
         </div>
         <div className="products-grid">
-          {products.map(product => (
-          <ProductCard 
-          key={product.id}
-          id={product.id} 
-          img = {product.img} 
-          title={product.title} 
-          category={product.category} 
-          description={product.description} 
-          price={product.price}  
-        />))}
+          {filtered.map(product => (
+            <ProductCard
+              key={product.id}
+              id={product.id}
+              img={product.img}
+              title={product.title}
+              category={product.category}
+              description={product.description}
+              price={product.price}
+            />
+          ))}
         </div>
       </div>
     </>
