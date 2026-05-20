@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
+import Impressum from './Impressum'
 import './index.css'
 
 export default function Experiences() {
@@ -12,6 +13,7 @@ export default function Experiences() {
         </div>
         
       </div>
+      <Impressum />
     </>
   )
 }

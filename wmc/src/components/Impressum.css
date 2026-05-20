@@ -1,0 +1,25 @@
+#impressum {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 5rem
+}
+
+#impressum h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    background-color: rgba(14, 17, 33, 0.717);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2vh;
+}

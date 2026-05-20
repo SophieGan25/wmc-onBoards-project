@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Alpine Snowboard",
+    "type": "Snowboards",
+    "category": "Boards",
+    "description": "Built for steep lines.",
+    "price": 399,
+    "img": "./img/snowboardPow.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Wave Rider Surfboard",
+    "type": "Surfboards",
+    "category": "Boards",
+    "description": "Responsive all-rounder.",
+    "price": 389,
+    "img": "./img/surfing.png"
+  },
+  {
+    "id": 3,
+    "title": "Wake X Wakeboard",
+    "type": "Wakeboards",
+    "category": "Boards",
+    "description": "Park and boat ready.",
+    "price": 299,
+    "img": "./img/wakeboarding.jpg"
+  }
+]

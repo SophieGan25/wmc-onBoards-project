@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
+import Impressum from './Impressum'
 import './index.css'
 
 
@@ -12,7 +13,8 @@ export default function Home() {
           <p>Indulge into an extrodinary sport experience</p>
           <p>Let us guide you through your board-journey</p>
         </div>
-              </div>
+      </div>
+      <Impressum />
     </>
   )
 }

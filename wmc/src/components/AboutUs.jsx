@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
+import Impressum from './Impressum'
 import snowb from './img/snowboardPow.jpg'
 import surf from './img/surfing.png'
 import wakeb from './img/wakeboarding.jpg'
@@ -32,6 +33,7 @@ export default function AboutUs() {
           <img src={wakeb} alt="Wakeboard" className="imgAbt" />
         </div>
       </div>
+      <Impressum />
     </>
   )
 }
