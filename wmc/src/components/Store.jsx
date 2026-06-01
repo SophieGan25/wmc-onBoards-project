@@ -64,7 +64,6 @@ export default function Store() {
           {filtered.map(product => (
             <ProductCard
               key={product.id}
-              id={product.id}
               img={product.img}
               title={product.title}
               category={product.type}
