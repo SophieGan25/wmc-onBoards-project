@@ -188,15 +188,15 @@ h3, h4 {
 }
 
 .indicator-high {
-  color: #ff9f43;
+  color: #ff8543;
 }
 
 .indicator-ideal {
-  color: #67ebff;
+  color: #67ffd1;
 }
 
 .indicator-low {
-  color: #a66cff;
+  color: #9b6cff;
 }
 
 .forecastReturn {

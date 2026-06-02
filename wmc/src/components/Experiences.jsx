@@ -159,6 +159,22 @@ export default function Experiences() {
     }
   }
 
+  function getWaveHeightIndicatorClass(waveHeight) {
+    const height = Number(waveHeight);
+    if (Number.isNaN(height)) return "";
+    if (height >= 2) return "indicator-high";
+    if (height >= 1) return "indicator-ideal";
+    return "indicator-low";
+  }
+
+  function getWavePeriodIndicatorClass(wavePeriod) {
+    const period = Number(wavePeriod);
+    if (Number.isNaN(period)) return "";
+    if (period >= 8) return "indicator-low";
+    if (period >= 5) return "indicator-ideal";
+    return "indicator-high";
+  }
+
   // Scroll to experience when clicking on the link in the review card
   useEffect(() => {
     const hash = window.location.hash.slice(1);
@@ -297,8 +313,18 @@ export default function Experiences() {
               </div>
               <div className="currentConditions">
                 <h3>Current Conditions</h3>
-                <p><strong>Wave Height:</strong> {weatherData.current?.wave_height || "N/A"} m</p>
-                <p><strong>Wave Period:</strong> {weatherData.current?.wave_period || "N/A"} s</p>
+                <p>
+                  <strong>Wave Height:</strong>{" "}
+                  <span className={getWaveHeightIndicatorClass(weatherData.current?.wave_height)}>
+                    {weatherData.current?.wave_height || "N/A"} m
+                  </span>
+                </p>
+                <p>
+                  <strong>Wave Period:</strong>{" "}
+                  <span className={getWavePeriodIndicatorClass(weatherData.current?.wave_period)}>
+                    {weatherData.current?.wave_period || "N/A"} s
+                  </span>
+                </p>
               </div>
             </div>
             <div className="hourlyConditions">
@@ -312,18 +338,17 @@ export default function Experiences() {
                 </p>
                 <p className="indicators">
                   <strong>
-                    Wave period indicators: <span className="indicator-high">long</span>, <span className="indicator-ideal">ideal</span>, <span className="indicator-low">short</span>
+                    Wave period indicators: <span className="indicator-low">long</span>, <span className="indicator-ideal">ideal</span>, <span className="indicator-high">short</span>
                   </strong>
                 </p>
                 <div className="hourlyForecast">
-                  
                   {hourlyForecastByDay && Object.entries(hourlyForecastByDay).map(([day, forecasts]) => (
                     <div className="forecastReturn" key={day}>
                       <div className="day-header"><strong>{day}</strong></div>
                       <ul>
                         {forecasts.map((forecast) => (
                           <li key={forecast.time}>
-                            {forecast.time}: Wave Height - {forecast.waveHeight}m, Wave Period - {forecast.wavePeriod}s
+                            {forecast.time}: Wave Height - <span className={getWaveHeightIndicatorClass(forecast.waveHeight)}>{forecast.waveHeight}m</span>, Wave Period - <span className={getWavePeriodIndicatorClass(forecast.wavePeriod)}>{forecast.wavePeriod}s</span>
                           </li>
                         ))}
                       </ul>
