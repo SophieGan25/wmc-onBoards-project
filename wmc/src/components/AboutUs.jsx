@@ -11,7 +11,7 @@ export default function AboutUs() {
       <Navbar />
       <div id="aboutus">
         <div className="page-headers">
-          <h1>About Us</h1>
+          <h1 className="page-title">About Us</h1>
           <p>Find out about our journey since 2026.</p>
         </div>
         

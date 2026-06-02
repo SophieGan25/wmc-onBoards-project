@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Emil R.",
+        "experienceId": 1,
+        "rating": "5",
+        "description": "Amazing experience! The instructors were fantastic and the location was breathtaking. I highly recommend it to anyone looking for an unforgettable adventure.",
+        "date": "15.01.2026",
+        "course": "Snowboard course in Zell am See, Austria"
+    },
+    {
+        "id": 2,
+        "name": "Sophia L.",
+        "experienceId": 2,
+        "rating": "4",
+        "description": "Had a great time learning to surf in Peniche. The waves were perfect and the instructors were very supportive. Would definitely do it again!",
+        "date": "10.04.2026",
+        "course": "Surfing course in Peniche, Portugal"
+    },
+    {
+        "id": 3,
+        "name": "Liam K.",
+        "experienceId": 3,
+        "rating": "4.5",
+        "description": "The wakeboarding course in Vienna was fantastic! The instructors were knowledgeable and the facilities were top-notch. I improved my skills significantly.",
+        "date": "20.05.2026",
+        "course": "Wakeboarding course in Vienna, Austria"
+    },
+    {
+        "id": 4,
+        "name": "Olivia M.",
+        "experienceId": 1,
+        "rating": "5",
+        "description": "The snowboard course in Zell am See exceeded my expectations! The instructors were patient and the scenery was stunning. I can't wait to go back!",
+        "date": "05.02.2026",
+        "course": "Snowboard course in Zell am See, Austria"
+    }
+]

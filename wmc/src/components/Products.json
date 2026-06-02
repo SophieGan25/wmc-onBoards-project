@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Alpine Snowboard",
-    "type": "Snowboards",
+    "type": "Snowboarding",
     "category": "Boards",
     "description": "Built for steep lines.",
     "price": 399,
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Wave Rider Surfboard",
-    "type": "Surfboards",
+    "type": "Surfboarding",
     "category": "Boards",
     "description": "Responsive all-rounder.",
     "price": 389,
@@ -20,10 +20,73 @@
   {
     "id": 3,
     "title": "Wake X Wakeboard",
-    "type": "Wakeboards",
+    "type": "Wakeboarding",
     "category": "Boards",
     "description": "Park and boat ready.",
     "price": 299,
     "img": "./img/wakeboarding.jpg"
+  }, 
+  {
+    "id": 4,
+    "title": "Kite Pro Kitesurfing Set",
+    "type": "Kitesurfing",
+    "category": "Kites",
+    "description": "Complete setup for all levels.",
+    "price": 999,
+    "img": "./img/kitesurfing.jpg"
+  }, 
+  {
+    "id": 5,
+    "title": "Wind Master Windsurfing Rig",
+    "type": "Windsurfing",
+    "category": "Rigs",
+    "description": "Durable and high-performance.",
+    "price": 799,
+    "img": "./img/windsurfing.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Skate Pro Skateboard",
+    "type": "Skateboarding",
+    "category": "Boards",
+    "description": "Perfect for street and park.",
+    "price": 199,
+    "img": "./img/skateboarding.jpg"
+  },
+  {
+    "id": 7,
+    "title": "All-Weather Snowboard Jacket",
+    "type": "Snowboarding",
+    "category": "Clothing",
+    "description": "Stay warm and dry on the slopes.",
+    "price": 149,
+    "img": "./img/snowboardJacket.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Surf Pro Wetsuit",
+    "type": "Surfboarding",
+    "category": "Clothing",
+    "description": "Flexible and insulated for cold water with 5/4 thickness.",
+    "price": 159,
+    "img": "./img/surfingWetsuit.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Wake Pro Life Vest",
+    "type": "Wakeboarding",
+    "category": "Safety Gear",
+    "description": "Comfortable and secure fit.",
+    "price": 89,
+    "img": "./img/wakeboardingVest.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Kite Control Bar",
+    "type": "Kitesurfing",
+    "category": "Accessories",
+    "description": "Precision control for your kite.",
+    "price": 199,
+    "img": "./img/kiteControlBar.jpg"
   }
 ]

@@ -60,3 +60,17 @@
     color: #67ebff;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
+
+.input-filter {
+    color: #7deeff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding-right: rem;
+}
+
+.countryType {
+    padding-right: 1rem;
+}
+
+.no-results {
+    padding: 2rem;
+}

@@ -9,12 +9,11 @@ export default function Home() {
       <Navbar />
       <div id="home">
         <div className="page-headers">
-          <h1 >Welcome to onBoards</h1>
+          <h1 className="page-title">Welcome to onBoards</h1>
           <p>Indulge into an extrodinary sport experience</p>
           <p>Let us guide you through your board-journey</p>
         </div>
       </div>
-      <Impressum />
     </>
   )
 }

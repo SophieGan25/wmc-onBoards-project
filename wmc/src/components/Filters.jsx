@@ -17,3 +17,16 @@ export default function Filters({ name, id, options, onFilter }) {
     </div>
   )
 }
+
+export function InputFilter({ name, id, onFilter }) {
+  return (
+    <div className="input-filter">
+      <label htmlFor={id} className="countryType">{name}</label>
+      <input 
+        type="text" 
+        id={id} 
+        className="country-input" 
+        onChange={e => onFilter(e.target.value)} /> 
+      </div>
+  );
+}

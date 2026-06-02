@@ -42,14 +42,14 @@ export default function Store() {
       <Navbar />
       <div id="store">
         <div className="page-headers">
-          <h1 id="page-headers">Our Products</h1>
+          <h1  className="page-title">Our Products</h1>
           <p>Explore our boards, accessories and equipment to get the best experiences.</p>
         </div>
         <div className="filters">
           <Filters
             name="Boards"
             id="boards-filter"
-            options={["Snowboards", "Surfboards", "Wakeboards", "Skateboards"]}
+            options={["Snowboarding", "Surfboarding", "Wakeboarding", "Skateboarding", "Kitesurfing", "Windsurfing"]}
             onFilter={setSelectedBoard}
           />
           <Filters

@@ -22,7 +22,7 @@
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.prodcard:hover {
+.prodcard:hover, .review-card:hover {
   transform: scale(1.05);
   border-color: #67ebff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
@@ -68,4 +68,50 @@
   font-size: 0.7rem;
   color: rgba(101, 231, 251, 0.3);
   margin: 0;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.reviews-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.review-card {
+  background-color: rgba(29, 80, 88, 0.618);
+  border: 1px solid rgba(39, 117, 119, 0.65);
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 20rem;
+  gap: 2 rem;
+  color: #67ebff;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.review-card h3 {
+  color: #319cad;
+}
+
+.courseLink {
+  font-size: 0.85rem;
+  color: #53929c;
+  text-align: center;
+  margin: 0;
+}
+
+.courseLink:hover {
+  color: rgb(155, 255, 255);
+  text-decoration: underline;
 }
