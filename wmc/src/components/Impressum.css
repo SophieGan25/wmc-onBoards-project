@@ -23,3 +23,13 @@
     padding: 1rem;
     margin-top: 2vh;
 }
+
+@media (max-width: 640px) {
+    #impressum {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+}

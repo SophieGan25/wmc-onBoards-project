@@ -115,3 +115,41 @@
   color: rgb(155, 255, 255);
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .products-grid,
+  .reviews,
+  .reviews-grid {
+    gap: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .prodcard {
+    width: min(100%, 260px);
+  }
+
+  .review-card {
+    width: min(100%, 28rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid,
+  .reviews-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 0;
+  }
+
+  .prodcard,
+  .review-card {
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+  }
+
+  .prodcard img {
+    height: 140px;
+  }
+}

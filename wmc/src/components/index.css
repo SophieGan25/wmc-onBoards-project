@@ -14,7 +14,7 @@ body {
 }
 
 #root {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -141,6 +141,70 @@ h3, h4 {
   margin-bottom: 1rem;
 }
 
+.eventFilters {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.upcomingEvents {
+  width: calc(100% - 4rem);
+  max-width: 1200px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.eventsCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.eventCategory {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  background-image: var(--event-category-bg);
+  background-position: center;
+  background-size: cover;
+}
+
+.eventCategory::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.eventCategory h3,
+.eventCategory .eventsGrid {
+  position: relative;
+  z-index: 1;
+}
+
+.eventCategory h3 {
+  text-transform: capitalize;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.eventCard {
+  border-top: 2px solid rgba(103, 235, 255, 0.3);
+  padding: 1rem;
+  color: #59b9c8;
+}
+
+.eventCard h4 {
+  margin-top: 0;
+}
+
 .load-weather-data {
   display: flex;
   flex-direction: column;
@@ -211,4 +275,155 @@ h3, h4 {
   color: #59b9c8;
   border-top: 2px solid rgba(103, 235, 255, 0.3);
   padding: 1rem;
+}
+
+.pageChangeLink {
+  color: #56b0be;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.pageChangeLink:hover {
+  color: #67ebff;
+  text-decoration: underline;
+}
+
+.more-link {
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  #home,
+  #aboutus,
+  #experiences,
+  #store {
+    margin: 2rem 1rem;
+    padding: 0 2rem;
+  }
+
+  .page-headers {
+    padding: 10rem 2rem 5rem;
+  }
+
+  .section-headers {
+    margin-top: 4rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .images-container {
+    flex-wrap: wrap;
+  }
+
+  .imgAbt {
+    width: min(45%, 320px);
+    height: 220px;
+    border-radius: 1rem;
+  }
+
+  #snowbpow,
+  #surf,
+  #wakeb {
+    width: min(45vw, 320px);
+  }
+
+  .filters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .upcomingEvents,
+  .load-weather-data,
+  .hourlyConditions {
+    width: calc(100% - 2rem);
+    margin: 1.5rem auto;
+  }
+
+  .wave-data {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #home,
+  #aboutus,
+  #experiences,
+  #store {
+    margin: 1rem 0.75rem;
+    padding: 0;
+  }
+
+  .page-headers {
+    padding: 10rem 1rem 3rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .section-headers {
+    font-size: 1.45rem;
+    margin-top: 3rem;
+  }
+
+  .images-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgAbt {
+    width: 100%;
+    max-width: 340px;
+    height: 180px;
+  }
+
+  #snowbpow,
+  #surf,
+  #wakeb {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .filters,
+  .eventFilters {
+    width: min(100%, 360px);
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button,
+  .showAll-button {
+    width: 100%;
+  }
+
+  .locationsearch {
+    padding: 0 0.75rem;
+  }
+
+  .location-input {
+    box-sizing: border-box;
+  }
+
+  .eventCategory {
+    padding: 1.25rem;
+  }
+
+  .eventsGrid,
+  .wave-data,
+  .hourlyForecast {
+    grid-template-columns: 1fr;
+  }
+
+  .eventCard {
+    padding: 0.75rem 0;
+  }
 }

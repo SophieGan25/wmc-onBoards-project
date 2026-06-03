@@ -1,12 +1,13 @@
 import './Filters.css';
 
-export default function Filters({ name, id, options, onFilter }) {
+export default function Filters({ name, id, options, onFilter, value }) {
   return (
     <div className="category-filter">
       <label htmlFor={id} className="catType">{name}</label>
       <select
         className="dropdown-select"
         id={id}
+        value={value}
         onChange={e => onFilter(e.target.value)}
       >
         <option value="">-- choose --</option>
