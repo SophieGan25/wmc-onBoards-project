@@ -300,9 +300,11 @@ export default function Experiences() {
           </div>
         </form>
 
-      <div className="load-weather-data">        
-        {loading && <p>Loading wave data...</p>}
-        {error && <p className="error">Error: {error}</p>}
+      <div className="load-weather-data">   
+        <div className="loadingError">
+          {loading && <p>Loading wave data...</p>}
+          {error && <p className="error">Error: {error}</p>}
+        </div>
         {weatherData && weatherData.location && (
           <>
             <div className="wave-data">
