@@ -12,7 +12,7 @@ export default function AboutUs() {
     <>
       <Navbar />
       <div id="aboutus">
-        <div className="page-headers">
+        <div className="page-headers" id="aboutus-header">
           <h1 className="page-title">About Us</h1>
           <p>Find out about our journey since 2026.</p>
         </div>

@@ -41,7 +41,7 @@ export default function Store() {
     <>
       <Navbar />
       <div id="store">
-        <div className="page-headers">
+        <div className="page-headers" id="store-header">
           <h1  className="page-title">Our Products</h1>
           <p>Explore our boards, accessories and equipment to get the best experiences.</p>
         </div>

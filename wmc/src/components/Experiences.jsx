@@ -204,7 +204,7 @@ export default function Experiences() {
     <>
       <Navbar />
       <div id="experiences">
-        <div className="page-headers">
+        <div className="page-headers" id="experiences-header">
           <h1 className="page-title">Experiences</h1>
           <p class="text-content">
             Learn the sport you've always wanted to try.

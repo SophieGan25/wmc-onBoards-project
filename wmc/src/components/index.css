@@ -67,6 +67,7 @@ header {
 
 .page-headers {
   padding: 20vw;
+  scroll-margin-top: 7rem;
 }
 
 select {

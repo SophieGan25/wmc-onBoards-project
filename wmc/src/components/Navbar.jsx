@@ -8,10 +8,10 @@ export default function Navbar() {
       <div id="navbar">
         <img src={logo} alt="logo" id="logo" />
         <nav id="navlinks">
-          <Link to="/">Home</Link>
-          <Link to="/store">Store</Link>
-          <Link to="/experiences">Experiences</Link>
-          <Link to="/aboutus">About Us</Link>
+          <Link to="/#home-header">Home</Link>
+          <Link to="/store#store-header">Store</Link>
+          <Link to="/experiences#experiences-header">Experiences</Link>
+          <Link to="/aboutus#aboutus-header">About Us</Link>
         </nav>
       </div>
     </header>
