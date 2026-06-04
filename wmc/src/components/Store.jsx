@@ -5,19 +5,19 @@ import './index.css'
 import productsData from './Products.json'
 import ProductCard from './Productcard'
 import Filters from './Filters'
-import snowb from './img/snowboardPow.jpg'
-import surf from './img/surfing.png'
-import wakeb from './img/wakeboarding.jpg'
 
-const imageMap = {
-  './img/snowboardPow.jpg': snowb,
-  './img/surfing.png': surf,
-  './img/wakeboarding.jpg': wakeb,
+const imageModules = import.meta.glob('./img/*', {
+  eager: true,
+  import: 'default',
+})
+
+function resolveImage(imagePath) {
+  return imageModules[imagePath] || imagePath
 }
 
 const products = productsData.map(product => ({
   ...product,
-  img: imageMap[product.img]
+  img: resolveImage(product.img)
 }))
 
 export default function Store() {

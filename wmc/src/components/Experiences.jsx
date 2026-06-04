@@ -8,20 +8,20 @@ import Filters from "./Filters";
 import { InputFilter } from "./Filters";
 import experiencesData from "./Experiences.json";
 import reviewsData from "./Reviews.json";
-import snowb from "./img/snowboardPow.jpg";
-import surf from "./img/surfing.png";
-import wakeb from "./img/wakeboarding.jpg";
 import { fetchWaveData, getLocationName, searchLocation } from "./script.js";
 
-const imageMap = {
-  "./img/snowboardPow.jpg": snowb,
-  "./img/surfing.png": surf,
-  "./img/wakeboarding.jpg": wakeb,
-};
+const imageModules = import.meta.glob("./img/*", {
+  eager: true,
+  import: "default",
+});
+
+function resolveImage(imagePath) {
+  return imageModules[imagePath] || imagePath;
+}
 
 const processedExperiences = experiencesData.map((experience) => ({
   ...experience,
-  img: imageMap[experience.img],
+  img: resolveImage(experience.img),
 }));
 
 export default function Experiences() {

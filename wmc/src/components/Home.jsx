@@ -9,9 +9,6 @@ import {
   fetchUpcomingEvents,
   fetchUpcomingEventsByCategory,
 } from "./script.js";
-import snowb from "./img/snowboardPow.jpg";
-import surf from "./img/surfing.png";
-import wakeb from "./img/wakeboarding.jpg";
 import skateboardingHeader from "./img/skateboardingHeader.png";
 import snowboardingHeading from "./img/snowboardingHeading.png";
 import surfingHeader from "./img/surfingHeader.png";
@@ -25,6 +22,14 @@ const eventCategoryBackgrounds = {
   surfing: surfingHeader,
   skateboarding: skateboardingHeader,
 };
+const imageModules = import.meta.glob("./img/*", {
+  eager: true,
+  import: "default",
+});
+
+function resolveImage(imagePath) {
+  return imageModules[imagePath] || imagePath;
+}
 
 export default function Home() {
   const [eventsByCategory, setEventsByCategory] = useState({});
@@ -67,20 +72,14 @@ export default function Home() {
     (category) => (eventsByCategory[category] || []).length > 0,
   );
 
-  const imageMap = {
-    "./img/snowboardPow.jpg": snowb,
-    "./img/surfing.png": surf,
-    "./img/wakeboarding.jpg": wakeb,
-  };
-
   const processedExperiences = experiencesData.map((experiences) => ({
     ...experiences,
-    img: imageMap[experiences.img],
+    img: resolveImage(experiences.img),
   }));
   const firstThreeExperiences = processedExperiences.slice(0, 3);
   const firstThreeProducts = productsData.slice(0, 3).map((product) => ({
     ...product,
-    img: imageMap[product.img],
+    img: resolveImage(product.img),
   }));
 
   return (

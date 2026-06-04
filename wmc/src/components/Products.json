@@ -6,7 +6,7 @@
     "category": "Boards",
     "description": "Built for steep lines.",
     "price": 399,
-    "img": "./img/snowboardPow.jpg"
+    "img": "./img/alpineSnowboard.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "category": "Boards",
     "description": "Responsive all-rounder.",
     "price": 389,
-    "img": "./img/surfing.png"
+    "img": "./img/waveRiderSurfboard.png"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "category": "Boards",
     "description": "Park and boat ready.",
     "price": 299,
-    "img": "./img/wakeboarding.jpg"
+    "img": "./img/wakeboard.png"
   }, 
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "category": "Kites",
     "description": "Complete setup for all levels.",
     "price": 999,
-    "img": "./img/kitesurfing.jpg"
+    "img": "./img/kiteset.png"
   }, 
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "category": "Rigs",
     "description": "Durable and high-performance.",
     "price": 799,
-    "img": "./img/windsurfing.jpg"
+    "img": "./img/windrig.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "category": "Boards",
     "description": "Perfect for street and park.",
     "price": 199,
-    "img": "./img/skateboarding.jpg"
+    "img": "./img/skateboard.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "category": "Clothing",
     "description": "Stay warm and dry on the slopes.",
     "price": 149,
-    "img": "./img/snowboardJacket.jpg"
+    "img": "./img/snowboardJacket.png"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "category": "Clothing",
     "description": "Flexible and insulated for cold water with 5/4 thickness.",
     "price": 159,
-    "img": "./img/surfingWetsuit.jpg"
+    "img": "./img/wetsuit.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "category": "Safety Gear",
     "description": "Comfortable and secure fit.",
     "price": 89,
-    "img": "./img/wakeboardingVest.jpg"
+    "img": "./img/lifevest.png"
   },
   {
     "id": 10,
@@ -87,6 +87,6 @@
     "category": "Accessories",
     "description": "Precision control for your kite.",
     "price": 199,
-    "img": "./img/kiteControlBar.jpg"
+    "img": "./img/kitebar.jpg"
   }
 ]

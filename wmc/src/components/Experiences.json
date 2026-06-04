@@ -10,7 +10,7 @@
     "price": 499,
     "country": "Austria",
     "location": "Zell am See, Austria",
-    "img": "./img/snowboardPow.jpg"
+    "img": "./img/snowcoursebeginner.png"
   },
   {
     "id": 2,
@@ -49,7 +49,7 @@
     "price": 1200,
     "country": "Spain",
     "location": "Cumbuco, Brazil",
-    "img": "./img/kitesurfing.jpg"
+    "img": "./img/kiteadvanced.png"
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
     "price": 450,
     "country": "Italy",
     "location": "Dakhla, Morocco",
-    "img": "./img/windsurfing.jpg"
+    "img": "./img/windsurfingbeg.jpg"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
     "price": 300,
     "country": "Germany",
     "location": "Berlin, Germany",
-    "img": "./img/skateboarding.jpg"
+    "img": "./img/skateboardadv.png"
   },
   {
     "id": 7,
@@ -101,6 +101,6 @@
     "price": 1500,
     "country": "Indonesia",
     "location": "Bali, Indonesia",
-    "img": "./img/surfing.png"
+    "img": "./img/surfingadv.jpg"
   }
 ]
